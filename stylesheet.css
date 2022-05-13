@@ -267,8 +267,8 @@ header {
 }
 @media screen and (max-width: 600px) {
 	.team-pic {
-		width: 28vw;
-		height: 28vw;
+		width: 27vw;
+		height: 27vw;
 		transform: translateX(0);
 	}
 	#omair {
@@ -279,7 +279,7 @@ header {
 	}
 	figure {
 		display: inline;
-		width: 28vw;
+		width: 27vw;
 		margin: 0;
 		padding: 0;
 	}
