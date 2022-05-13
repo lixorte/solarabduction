@@ -1,0 +1,302 @@
+@font-face {
+	font-family: GeometrySoftPro;
+	src: url("assets/Geometry Soft Pro-Bold N.otf");
+	font-weight: bold;
+}
+@font-face {
+	font-family: UbuntuTitle;
+	src: url("assets/Ubuntu-Title.ttf");
+}
+@font-face {
+	font-family: Virgo;
+	src: url("assets/virgo.ttf");
+}
+body {
+	background-color: rgb(29, 18, 67);
+	font-size: 100%;
+}
+.planet {
+	width: 8vw;
+	min-width: 8vw;
+	display: block;
+	margin: 30px auto;
+}
+.big-planet {
+	width: 12vw;
+	min-width: 12vw;
+}
+@media screen and (max-width: 600px) {
+	.planet {
+		width: 14vw;
+	}
+	.big-planet {
+		width: 18vw;
+	}
+}
+.section-text {
+	font-family: GeometrySoftPro, sans-serif;
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+/* game description */
+
+.quote {
+	color: white;
+	font-size: 1.5em;
+	text-align: right;
+	margin-right: 50px;
+	font-family: GeometrySoftPro, sans-serif;
+}
+
+#description {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	line-height: 1.3;
+}
+
+@media screen and (max-width: 600px) {
+	.quote {
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+	#description {
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+}
+
+/* trailer */
+
+#video {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/* gallery & showcase */
+
+.image-row {
+	display: flex;
+}
+.image-column {
+	flex: 33.33%;
+	padding: 5px;
+}
+#gifs {
+	flex: 5%;
+}
+#screen {
+	flex: 40%;
+}
+#show-more {
+	display: none;
+	background: none;
+	border: none;
+	font-family: GeometrySoftPro, sans-serif;
+	color: white;
+	font-size: 1.3em;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#show-less {
+	display: none;
+	background: none;
+	border: none;
+	font-family: GeometrySoftPro, sans-serif;
+	color: white;
+	font-size: 1.3em;
+	cursor: pointer;
+	text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+	.image-row {
+		flex-direction: column;
+	}
+	.img-small {
+		max-width: 23vw;
+	}
+	.image-column {
+		flex-direction: row;
+		justify-content: center;
+		gap: 5px;
+	}
+	#show-more {
+		display: inline;
+	}
+	#column-two {
+		display: none;
+	}
+	#gifs {
+		display: none;
+	}
+}
+
+/* banner */
+
+header {
+	background-image: url("assets/background-gradient.png");
+	background-size: 100%;
+}
+.title-text {
+	font-family: GeometrySoftPro, sans-serif;
+	font-size: 7vw;
+	color: white;
+	text-align: center;
+	flex: none;
+	/*margin-left: 10vw;
+	margin-top: 10vw;*/
+}
+.flex-container {
+	display: flex;
+	align-items: stretch;
+}
+.flex-left {
+	flex: 3;
+}
+.flex-right {
+	flex: 4;
+	justify-content: center;
+	align-items: center;
+}
+.banner-art {
+	width: 100%;
+}
+#button {
+	flex: none;
+	margin: 1vw 0 0;
+	position: absolute;
+	left: 60%;
+	-ms-transform: translateX(-21.5%);
+	transform: translateX(-21.5%);
+	border: none;
+	cursor: pointer;
+	font-size: 3.5vw;
+	width: 40vw;
+	height: 10vw;
+	border-radius: 10px;
+	font-family: Virgo, sans-serif;
+
+	background-image: linear-gradient(135deg, rgb(119, 196, 231), rgb(0, 160, 216));
+	//background-image: linear-gradient(135deg, rgb(0, 160, 216), rgb(50, 28, 140));
+	transition-duration: 0.4s;
+}
+#button:hover {
+	background-image: linear-gradient(135deg, rgb(0, 160, 216), rgb(50, 28, 140));
+	//background-image: linear-gradient(135deg, rgb(0, 120, 162), rgb(38, 21, 105));
+	//background-image: linear-gradient(135deg, rgb(119, 196, 231), rgb(0, 160, 216));
+}
+.logo {
+	display: flex;
+	width: 40vw;
+	margin-bottom: 5vw;
+	margin-top: 5vw;
+	transform: translateX(20%);
+}
+
+/* team */
+
+.flex-team {
+	display: flex;
+}
+.item {
+	//background-color: blanchedalmond;
+	height: 60%;
+	margin: 5px;
+	flex: 1;
+}
+@media screen and (max-width: 600px) {
+	.flex-team {
+		flex-direction: column;
+	}
+}
+.small-title {
+	font-family: GeometrySoftPro, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+}
+.caption {
+	font-family: GeometrySoftPro, sans-serif;
+	text-align: center;
+	color: white;
+}
+.team-pic {
+	width: 20vw;
+	height: 20vw;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: 0 0;
+	margin: 3px;
+	transform: translateX(10%);
+}
+#omair {
+	transform: translateX(10%) rotate(-90deg);
+	object-position: 60% 0;
+}
+#karin {
+	transform: translateX(10%) rotate(-90deg);
+	object-position: 70% 0;
+}
+@media screen and (max-width: 750px) and (min-width: 600px) {
+	.team-pic {
+		transform: translateX(-10%);
+	}
+	#omair {
+		transform: translateX(-10%) rotate(-90deg);
+	}
+	#karin {
+		transform: translateX(-20%) rotate(-90deg);
+	}
+	#evelyn {
+		transform: translateX(-20%);
+	}
+	#tia {
+		transform: translateX(-20%);
+	}
+	#artist {
+		transform: translateX(-10%);
+	}
+}
+@media screen and (max-width: 600px) {
+	.team-pic {
+		width: 29vw;
+		height: 29vw;
+		transform: translateX(0);
+	}
+	#omair {
+		transform: translateX(60%) rotate(-90deg);
+	}
+	#karin {
+		transform: translateX(0) rotate(-90deg);
+	}
+	figure {
+		display: inline;
+		width: 29vw;
+		margin: 0;
+		padding: 0;
+	}
+	figcaption {
+		display: none;
+	}
+	.pic-move {
+		transform: translateX(60%);
+	}
+}
+
+/* footer */
+
+.footer-text {
+	font-family: UbuntuTitle, sans-serif;
+	font-size: max(17px, 3vw);
+	color: white;
+	text-align: left;
+	margin-left: 15px;
+}

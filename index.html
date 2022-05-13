@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Solar Abduction</title>
+</head>
+<body>
+
+<header class="flex-container">
+	<div class="flex-left">
+		<img class="banner-art" src="assets/ufo.png" alt="art">
+	</div>
+	<div class="flex-right">
+		<img class="logo" src="assets/logo.png" alt="logo">
+		<button id="button" class="title-text" type="submit" onclick="window.open('https://legitmuzic.com/wp-content/uploads/2021/09/Rick_Astley_-_Never_Gonna_Give_You_Up_legitmuzic.com.mp3')"> Download now </button>
+	</div>
+</header>
+<br>
+<div class="trailer">
+	<p class="section-text"> Trailer </p>
+	<video id="video" src="assets/trailer.mp4" controls>
+		your browser doesn't support videos
+	</video>
+</div>
+<br>
+<img class="planet" src="assets/yellow.png" alt="planet">
+<br>
+<div class="expl">
+	<p class="quote">"Moving two marbles instead of one really is unique"</p>
+	<p class="quote">"Some of the levels really make you think"</p>
+	<p class="quote">"This looks sick"</p>
+	<p class="small-title" id="description"> Maneuver black holes, use the power of Teleportation and forge your way through asteroids to abduct all planets of the solar system!
+		A new fresh take on the classic marble game. </p>
+</div>
+<br>
+<img class="planet big-planet" src="assets/red.png" alt="planet">
+<br>
+<div class="gallery">
+	<p class="section-text"> Showcase </p>
+	<div class="image-row">
+		<div id="screen" class="image-column">
+			<img src="assets/level.png" alt="gallery" style="width:100%">
+			<img src="assets/tile-set.png" alt="gallery" style="width:100%">
+		</div>
+		<button id="show-more" onclick="show()">Show more</button>
+		<div id="column-two" class="image-column">
+			<img src="assets/titlescreen.png" alt="gallery" style="width:100%">
+			<img src="assets/levelingame.png" alt="gallery" style="width:100%">
+			<img src="assets/ufos.png" alt="gallery" style="width:100%">
+			<img src="assets/conveer.png" alt="gallery" style="width:100%">
+		</div>
+		<div id="gifs" class="image-column">
+			<img class="img-small" src="assets/black-hole.gif" alt="gallery" style="width:100%">
+			<img class="img-small" src="assets/ufo-idle.gif" alt="gallery" style="width:100%">
+			<img class="img-small" src="assets/ufo.gif" alt="gallery" style="width:100%">
+			<img class="img-small" src="assets/portal-gif.gif" alt="gallery" style="width:100%">
+		</div>
+		<button id="show-less" onclick="show()">Show less</button>
+	</div>
+</div>
+<br>
+<img class="planet" src="assets/blue.png" alt="planet">
+<br>
+<div class="merch">
+	<p class="section-text"> Visit our Online Store </p>
+	<div class="image-row">
+		<div class="image-column">
+			<img src="assets/stickers.png" alt="merch" style="width:100%">
+		</div>
+		<div class="image-column">
+			<img src="assets/socks.png" alt="merch" style="width:100%">
+		</div>
+		<div class="image-column">
+			<img src="assets/toys.png" alt="merch" style="width:100%">
+		</div>
+	</div>
+</div>
+<br>
+<img class="planet big-planet" src="assets/orange.png" alt="assets/placeholder.png">
+<br>
+<div class="team">
+	<p class="section-text"> Our team </p>
+	<div class="flex-team">
+		<div class="item">
+			<p class="small-title"> Engineers </p>
+			<figure>
+				<img class="team-pic pic-move" src="assets/matias.png" alt="Matias">
+				<figcaption class="caption">Matias</figcaption>
+			</figure>
+			<figure>
+				<img class="team-pic pic-move" id="omair" src="assets/omair.png" alt="Omair">
+				<figcaption class="caption">Omair</figcaption>
+			</figure>
+		</div>
+		<div class="item">
+			<p class="small-title"> Designers </p>
+			<figure>
+				<img class="team-pic pic-move" src="assets/enya.png" alt="Enya">
+				<figcaption class="caption">Enya</figcaption>
+			</figure>
+			<figure>
+				<img class="team-pic pic-move" src="assets/maryn.png" alt="Maryn">
+				<figcaption class="caption">Maryn</figcaption>
+			</figure>
+		</div>
+		<div class="item">
+			<p class="small-title" id="artist"> Artists </p>
+			<figure>
+				<img class="team-pic" id="tia" src="assets/tia.png" alt="Tia">
+				<figcaption class="caption">Tia</figcaption>
+			</figure>
+			<figure>
+				<img class="team-pic" id="karin" src="assets/karin.png" alt="Karin">
+				<figcaption class="caption">Karin</figcaption>
+			</figure>
+			<figure>
+				<img class="team-pic" id="evelyn" src="assets/evelyn.png" alt="Evelyn">
+				<figcaption class="caption">Evelyn</figcaption>
+			</figure>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p class="footer-text"> &copy; Shooting Stars </p>
+</footer>
+<script>
+    function show() {
+        let sm = document.getElementById("show-more");
+        let sl = document.getElementById("show-less");
+        let x = document.getElementById("column-two");
+        if (x.style.display === "inline") {
+            x.style.display = "none";
+            sl.style.display = "none";
+            sm.style.display = "inline";
+        } else {
+            x.style.display = "inline";
+            sl.style.display = "inline";
+            sm.style.display = "none";
+        }
+        x = document.getElementById("gifs");
+        if (x.style.display === "inline") {
+            x.style.display = "none";
+            sl.style.display = "none";
+            sm.style.display = "inline";
+        } else {
+            x.style.display = "inline";
+            sl.style.display = "inline";
+            sm.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
