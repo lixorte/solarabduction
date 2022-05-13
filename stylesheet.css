@@ -283,6 +283,9 @@ header {
 		margin: 0;
 		padding: 0;
 	}
+	#evelyn {
+		margin-right: 0;
+	}
 	figcaption {
 		display: none;
 	}
